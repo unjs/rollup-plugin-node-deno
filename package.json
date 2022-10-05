@@ -18,7 +18,7 @@
     "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
     "prepack": "unbuild",
     "release": "pnpm test && standard-version && git push --follow-tags && pnpm publish",
-    "test": "pnpm lint && vitest run"
+    "test": "pnpm lint && tsc --noEmit && vitest run"
   },
   "dependencies": {
     "@rollup/plugin-inject": "^4.0.2"
@@ -33,6 +33,7 @@
     "eslint": "^8.24.0",
     "rollup": "^2.79.1",
     "standard-version": "^9.3.0",
+    "typescript": "^4.8.4",
     "unbuild": "^0.8.11",
     "vitest": "^0.23.4"
   },

@@ -19,7 +19,7 @@ jobs:
           node-version: 16
           cache: "pnpm"
       - run: pnpm install
-      - run: pnpm lint
+      - run: pnpm test
       - run: pnpm build
       - run: pnpm vitest --coverage
       - uses: codecov/codecov-action@v3
