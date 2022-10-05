@@ -23,6 +23,7 @@ export function execSync (cmd) {
     stdout = _stdout
   })
 
+  /* eslint-disable no-empty */
   // eslint-disable-next-line no-unmodified-loop-condition
   while (err !== undefined && stdout !== undefined) {
 

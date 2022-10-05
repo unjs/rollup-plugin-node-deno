@@ -1,11 +1,11 @@
+import { resolve } from 'node:path'
+import { builtinModules } from 'node:module'
 import type { Plugin } from 'rollup'
-import { resolve } from 'path'
-import { builtinModules } from 'module'
 import inject from '@rollup/plugin-inject'
 
 const pluginDir = __dirname
 
-export default function rollupPluginNodeDeno() {
+export default function rollupPluginNodeDeno () {
   const injectPlugin = inject({
     modules: {
       process: 'process',
