@@ -30,7 +30,7 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@types/node": "^18.8.2",
-    "c8": "^7.12.0",
+    "@vitest/coverage-c8": "^0.23.4",
     "eslint": "^8.24.0",
     "rollup": "^2.78.1",
     "standard-version": "^9.3.0",
