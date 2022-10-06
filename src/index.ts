@@ -1,9 +1,10 @@
-import { resolve } from 'node:path'
+import { dirname, resolve } from 'node:path'
 import { builtinModules } from 'node:module'
-import type { Plugin } from 'rollup'
+import { fileURLToPath } from 'node:url'
+
 import inject from '@rollup/plugin-inject'
 
-const pluginDir = __dirname
+const pluginDir = dirname(fileURLToPath(import.meta.url))
 
 export default function rollupPluginNodeDeno () {
   const injectPlugin = inject({
@@ -38,7 +39,7 @@ export default function rollupPluginNodeDeno () {
         }
       }
     }
-  } as Plugin
+  } as import('rollup').Plugin
 }
 
 function resolveDeno (id: string) {
