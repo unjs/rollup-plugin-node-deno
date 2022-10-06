@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "module": "ESNext",
+    "skipLibCheck": true,
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "strict": true
