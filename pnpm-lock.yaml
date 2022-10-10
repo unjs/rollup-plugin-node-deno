@@ -4,7 +4,7 @@ specifiers:
   '@nuxtjs/eslint-config-typescript': ^11.0.0
   '@rollup/plugin-commonjs': ^22.0.2
   '@rollup/plugin-inject': ^4.0.2
-  '@rollup/plugin-json': ^4.1.0
+  '@rollup/plugin-json': ^5.0.0
   '@rollup/plugin-node-resolve': ^14.1.0
   '@types/node': ^18.8.2
   '@vitest/coverage-c8': ^0.23.4
@@ -21,7 +21,7 @@ dependencies:
 devDependencies:
   '@nuxtjs/eslint-config-typescript': 11.0.0_ypn2ylkkyfa5i233caldtndbqa
   '@rollup/plugin-commonjs': 22.0.2_rollup@2.78.1
-  '@rollup/plugin-json': 4.1.0_rollup@2.78.1
+  '@rollup/plugin-json': 5.0.0_rollup@2.78.1
   '@rollup/plugin-node-resolve': 14.1.0_rollup@2.78.1
   '@types/node': 18.8.2
   '@vitest/coverage-c8': 0.23.4
@@ -483,15 +483,6 @@ packages:
       rollup: 2.78.1
     dev: false
 
-  /@rollup/plugin-json/4.1.0_rollup@2.78.1:
-    resolution: {integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==}
-    peerDependencies:
-      rollup: ^1.20.0 || ^2.0.0
-    dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.78.1
-      rollup: 2.78.1
-    dev: true
-
   /@rollup/plugin-json/4.1.0_rollup@2.79.1:
     resolution: {integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==}
     peerDependencies:
@@ -499,6 +490,19 @@ packages:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.79.1
       rollup: 2.79.1
+    dev: true
+
+  /@rollup/plugin-json/5.0.0_rollup@2.78.1:
+    resolution: {integrity: sha512-LsWDA5wJs/ggzakVuKQhZo7HPRcQZgBa3jWIVxQSFxaRToUGNi8ZBh3+k/gQ+1eInVYJgn4WBRCUkmoDrmmGzw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      rollup: 2.78.1
     dev: true
 
   /@rollup/plugin-node-resolve/13.3.0_rollup@2.79.1:
