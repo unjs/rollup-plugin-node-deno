@@ -55,27 +55,38 @@ function resolveDeno (id: string) {
 // https://deno.land/std/node
 const denoNodeStd = [
   'assert',
+  'assert/strict',
   'buffer',
-  'cli',
+  'console',
+  'constants',
   'crypto',
+  'child_process',
+  'dns',
   'events',
   'fs',
+  'fs/promises',
+  'http',
   'module',
+  'net',
   'os',
   'path',
+  'perf_hooks',
   'process',
   'querystring',
+  'readline',
   'stream',
+  'string_decoder',
+  'sys',
   'timers',
+  'timers/promises',
   'tty',
   'url',
-  'util'
+  'util',
+  'worker_threads'
 ]
 
 // See ./deno/
 const denoExtras = [
-  'child_process',
-  'readline',
   'global',
   'node-fetch',
   'chalk'
