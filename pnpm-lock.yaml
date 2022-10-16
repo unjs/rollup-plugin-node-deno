@@ -9,6 +9,8 @@ specifiers:
   '@types/node': ^18.11.0
   '@vitest/coverage-c8': ^0.24.3
   eslint: ^8.25.0
+  magic-string: ^0.26.7
+  mlly: ^0.5.16
   rollup: ^2.79.1
   standard-version: ^9.3.0
   typescript: ^4.8.4
@@ -17,6 +19,8 @@ specifiers:
 
 dependencies:
   '@rollup/plugin-inject': 5.0.1_rollup@2.79.1
+  magic-string: 0.26.7
+  mlly: 0.5.16
 
 devDependencies:
   '@nuxtjs/eslint-config-typescript': 11.0.0_z4bbprzjrhnsfa24uvmcbu7f5q
@@ -794,7 +798,6 @@ packages:
     resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
 
   /add-stream/1.0.0:
     resolution: {integrity: sha512-qQLMr+8o0WC4FZGQTcJiKBVC59JylcPSrTtk6usvmIDFUOCKegapy1VHQwRbFMOFyb/inzUVqHs+eMYKDM1YeQ==}
@@ -2920,7 +2923,6 @@ packages:
 
   /jsonc-parser/3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
-    dev: true
 
   /jsonfile/6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
@@ -3138,7 +3140,6 @@ packages:
       pathe: 0.3.9
       pkg-types: 0.3.5
       ufo: 0.8.6
-    dev: true
 
   /modify-values/1.0.1:
     resolution: {integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==}
@@ -3386,7 +3387,6 @@ packages:
 
   /pathe/0.3.9:
     resolution: {integrity: sha512-6Y6s0vT112P3jD8dGfuS6r+lpa0qqNrLyHPOwvXMnyNTQaYiwgau2DP3aNDsR13xqtGj7rrPo+jFUATpU6/s+g==}
-    dev: true
 
   /pathval/1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
@@ -3416,7 +3416,6 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 0.5.16
       pathe: 0.3.9
-    dev: true
 
   /pluralize/8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
@@ -4032,7 +4031,6 @@ packages:
 
   /ufo/0.8.6:
     resolution: {integrity: sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==}
-    dev: true
 
   /uglify-js/3.17.3:
     resolution: {integrity: sha512-JmMFDME3iufZnBpyKL+uS78LRiC+mK55zWfM5f/pWBJfpOttXAqYfdDGRukYhJuyRinvPVAtUhvy7rlDybNtFg==}

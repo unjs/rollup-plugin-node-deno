@@ -1,7 +1,9 @@
-import { dirname, resolve } from 'node:path'
+import { dirname, isAbsolute, resolve } from 'node:path'
 import { builtinModules } from 'node:module'
 import { fileURLToPath } from 'node:url'
 
+import MagicString from 'magic-string'
+import { findStaticImports } from 'mlly'
 import inject from '@rollup/plugin-inject'
 
 const pluginDir = dirname(fileURLToPath(import.meta.url))
@@ -37,6 +39,27 @@ export default function rollupPluginNodeDeno () {
         }
         return {
           id: resolve(pluginDir, 'deno/empty.mjs')
+        }
+      }
+      if (isHTTPImport(id)) {
+        return {
+          id,
+          external: true
+        }
+      }
+    },
+    renderChunk (code) {
+      const s = new MagicString(code)
+      const imports = findStaticImports(code)
+      for (const i of imports) {
+        if (!i.specifier.startsWith('.') && !isAbsolute(i.specifier) && !isHTTPImport(i.specifier) && !i.specifier.startsWith('npm:')) {
+          s.replace(i.code, i.code.replace(new RegExp(`(?<quote>['"])${i.specifier}\\k<quote>`), JSON.stringify(resolveDeno(i.specifier) ?? ('npm:' + i.specifier))))
+        }
+      }
+      if (s.hasChanged()) {
+        return {
+          code: s.toString(),
+          map: s.generateMap({ includeContent: true })
         }
       }
     }
@@ -91,3 +114,7 @@ const denoExtras = [
   'node-fetch',
   'chalk'
 ]
+
+function isHTTPImport (id: string) {
+  return id.startsWith('https://') || id.startsWith('http://')
+}
