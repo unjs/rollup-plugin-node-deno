@@ -1,6 +1,7 @@
 {
   "name": "rollup-plugin-node-deno",
   "repository": "unjs/rollup-plugin-node-deno",
+  "version": "0.0.2",
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
