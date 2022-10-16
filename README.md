@@ -1,4 +1,4 @@
-# rollup-plugin-deno2
+# rollup-plugin-node-deno
 
 Convert NodeJS to Deno compatible code with rollup.
 
@@ -14,7 +14,7 @@ Convert NodeJS to Deno compatible code with rollup.
 npm install rollup-plugin-node-deno
 
 # yarn
-yarn add rollup-plugin-node-deno2
+yarn add rollup-plugin-node-deno
 ```
 
 ## Usage
