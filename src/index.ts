@@ -25,6 +25,7 @@ export default function rollupPluginNodeDeno () {
     ...injectPlugin /* adds transform hook */,
     name: 'rollup-plugin-node-deno',
     resolveId (id) {
+      id = id.replace('node:', '')
       if (builtinModules.includes(id) || denoExtras.includes(id)) {
         const denoId = resolveDeno(id)
         if (denoId) {
@@ -35,7 +36,7 @@ export default function rollupPluginNodeDeno () {
           }
         }
         return {
-          id: resolve(pluginDir, 'deno/empty.js')
+          id: resolve(pluginDir, 'deno/empty.mjs')
         }
       }
     }
@@ -47,7 +48,7 @@ function resolveDeno (id: string) {
     return `https://deno.land/std/node/${id}.ts`
   }
   if (denoExtras.includes(id)) {
-    return resolve(pluginDir, `extras/${id}.t`)
+    return resolve(pluginDir, `extras/${id}.mjs`)
   }
 }
 
