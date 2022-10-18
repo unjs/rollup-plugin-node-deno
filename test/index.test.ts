@@ -15,6 +15,6 @@ describe('plugin', () => {
       ]
     })
     const { code } = (await buildRes.generate({})).output[0]
-    expect(code).toMatch('import path from \'https://deno.land/std/node/path.ts\'')
+    expect(code).toMatch('import path from \'https://deno.land/std@0.160.0/node/path.ts\'')
   })
 })

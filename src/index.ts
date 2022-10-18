@@ -68,7 +68,7 @@ export default function rollupPluginNodeDeno () {
 
 function resolveDeno (id: string) {
   if (denoNodeStd.includes(id)) {
-    return `https://deno.land/std/node/${id}.ts`
+    return `https://deno.land/std@0.160.0/node/${id}.ts`
   }
   if (denoExtras.includes(id)) {
     return resolve(pluginDir, `extras/${id}.mjs`)
@@ -78,34 +78,55 @@ function resolveDeno (id: string) {
 // https://deno.land/std/node
 const denoNodeStd = [
   'assert',
-  'assert/strict',
+  'assert/strict', // partly
+  'async_hooks', // partly
   'buffer',
-  'console',
-  'constants',
-  'crypto',
-  'child_process',
-  'dns',
+  'child_process', // partly
+  'cluster', // partly
+  'console', // partly
+  'constants', // partly
+  'crypto', // partly
+  'dgram', // partly
+  'diagnostics_channel',
+  'dns', // partly
   'events',
-  'fs',
-  'fs/promises',
-  'http',
+  'fs', // partly
+  'fs/promises', // partly
+  'http', // partly
+  'http2',
+  'https', // partly
+  'inspector', // partly
   'module',
   'net',
-  'os',
+  'os', // partly
   'path',
+  'path/posix',
+  'path/win32',
   'perf_hooks',
-  'process',
+  'process', // partly
+  'punycode',
   'querystring',
   'readline',
+  'repl', // partly
   'stream',
+  'stream/promises',
+  'stream/web', // partly
   'string_decoder',
   'sys',
   'timers',
   'timers/promises',
-  'tty',
+  'tls',
+  'trace_events',
+  'tty', // partly
   'url',
-  'util',
-  'worker_threads'
+  'util', // partly
+  'util/types', // partly
+  'v8',
+  'vm', // partly
+  'wasi',
+  'webcrypto',
+  'worker_threads',
+  'zlib'
 ]
 
 // See ./deno/

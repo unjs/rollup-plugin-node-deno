@@ -46,29 +46,61 @@ export default {
 
 ## Support
 
-Deno Node compatibility (https://deno.land/std@0.90.0/node/README.md):
+Deno Node compatibility (https://deno.land/std@0.160.0/node/README.md):
 
 - `assert`
+- `assert/strict` _partly_
+- `async_hooks` _partly_
 - `buffer`
-- `cli`
-- `crypto`
+- `child_process` _partly_
+- `cluster` _partly_
+- `console` _partly_
+- `constants` _partly_
+- `crypto` _partly_
+- `dgram` _partly_
+- `diagnostics_channel`
+- `dns` _partly_
 - `events`
-- `fs`
+- `fs` _partly_
+- `fs/promises` _partly_
+- `http` _partly_
+- `http2`
+- `https` _partly_
+- `inspector` _partly_
 - `module`
-- `os`
+- `net`
+- `os` _partly_
 - `path`
-- `process`
+- `path/posix`
+- `path/win32`
+- `perf_hooks`
+- `process` _partly_
+- `punycode`
 - `querystring`
+- `readline`
+- `repl` _partly_
 - `stream`
-- `timers
-- `tty`
+- `stream/promises`
+- `stream/web` _partly_
+- `string_decoder`
+- `sys`
+- `timers`
+- `timers/promises`
+- `tls`
+- `trace_events`
+- `tty` _partly_
 - `url`
-- `util`
+- `util` _partly_
+- `util/types` _partly_
+- `v8`
+- `vm` _partly_
+- `wasi`
+- `webcrypto`
+- `worker_threads`
+- `zlib`
 
 Extras: (see [./lib/extras](./lib/extras))
 
-- `child_process` (basic `exec` from [deno.land/x/exec](https://deno.land/x/exec))
-- `readline` (exports: `createInterface` without implementation)
 - `node-fetch` (using native `fetch`)
 - `chalk` (using [deno.land/x/chalk_deno](https://deno.land/x/chalk_deno))
 
