@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/unjs/rollup-plugin-node-deno/compare/v0.0.2...v0.0.3) (2022-10-18)
+
+
+### Bug Fixes
+
+* version deno std library ([e12d45e](https://github.com/unjs/rollup-plugin-node-deno/commit/e12d45ea3b0d437149d0aa3735616716b286fec5))
+
 ### 0.0.2 (2022-10-16)
 
 
