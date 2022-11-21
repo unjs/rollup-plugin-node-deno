@@ -23,23 +23,23 @@
     "test": "pnpm lint && tsc --noEmit && vitest run"
   },
   "dependencies": {
-    "@rollup/plugin-inject": "^5.0.1",
+    "@rollup/plugin-inject": "^5.0.2",
     "magic-string": "^0.26.7",
-    "mlly": "^0.5.16"
+    "mlly": "^0.5.17"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
-    "@rollup/plugin-commonjs": "^23.0.0",
-    "@rollup/plugin-json": "^5.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.0",
-    "@types/node": "^18.11.0",
-    "@vitest/coverage-c8": "^0.24.3",
-    "eslint": "^8.25.0",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-json": "^5.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@types/node": "^18.11.9",
+    "@vitest/coverage-c8": "^0.25.2",
+    "eslint": "^8.28.0",
     "rollup": "^2.79.1",
     "standard-version": "^9.3.0",
-    "typescript": "^4.8.4",
+    "typescript": "^4.9.3",
     "unbuild": "^0.9.4",
-    "vitest": "^0.24.3"
+    "vitest": "^0.25.2"
   },
-  "packageManager": "pnpm@7.9.0"
+  "packageManager": "pnpm@7.17.0"
 }
