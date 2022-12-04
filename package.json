@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@rollup/plugin-inject": "^5.0.2",
-    "magic-string": "^0.26.7",
+    "magic-string": "^0.27.0",
     "mlly": "^0.5.17"
   },
   "devDependencies": {
@@ -41,5 +41,5 @@
     "unbuild": "^0.9.4",
     "vitest": "^0.25.3"
   },
-  "packageManager": "pnpm@7.17.1"
+  "packageManager": "pnpm@7.18.0"
 }
