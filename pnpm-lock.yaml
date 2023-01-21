@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxtjs/eslint-config-typescript': ^11.0.0
-  '@rollup/plugin-commonjs': ^23.0.7
+  '@rollup/plugin-commonjs': ^24.0.1
   '@rollup/plugin-inject': ^5.0.3
   '@rollup/plugin-json': ^5.0.2
   '@rollup/plugin-node-resolve': ^15.0.1
@@ -24,7 +24,7 @@ dependencies:
 
 devDependencies:
   '@nuxtjs/eslint-config-typescript': 11.0.0_lzzuuodtsqwxnvqeq4g4likcqa
-  '@rollup/plugin-commonjs': 23.0.7_rollup@2.79.1
+  '@rollup/plugin-commonjs': 24.0.1_rollup@2.79.1
   '@rollup/plugin-json': 5.0.2_rollup@2.79.1
   '@rollup/plugin-node-resolve': 15.0.1_rollup@2.79.1
   '@types/node': 18.11.17
@@ -442,24 +442,6 @@ packages:
       slash: 4.0.0
     dev: true
 
-  /@rollup/plugin-commonjs/23.0.7_rollup@2.79.1:
-    resolution: {integrity: sha512-hsSD5Qzyuat/swzrExGG5l7EuIlPhwTsT7KwKbSCQzIcJWjRxiimi/0tyMYY2bByitNb3i1p+6JWEDGa0NvT0Q==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^2.68.0||^3.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-    dependencies:
-      '@rollup/pluginutils': 5.0.1_rollup@2.79.1
-      commondir: 1.0.1
-      estree-walker: 2.0.2
-      glob: 8.0.3
-      is-reference: 1.2.1
-      magic-string: 0.27.0
-      rollup: 2.79.1
-    dev: true
-
   /@rollup/plugin-commonjs/23.0.7_rollup@3.2.1:
     resolution: {integrity: sha512-hsSD5Qzyuat/swzrExGG5l7EuIlPhwTsT7KwKbSCQzIcJWjRxiimi/0tyMYY2bByitNb3i1p+6JWEDGa0NvT0Q==}
     engines: {node: '>=14.0.0'}
@@ -476,6 +458,24 @@ packages:
       is-reference: 1.2.1
       magic-string: 0.27.0
       rollup: 3.2.1
+    dev: true
+
+  /@rollup/plugin-commonjs/24.0.1_rollup@2.79.1:
+    resolution: {integrity: sha512-15LsiWRZk4eOGqvrJyu3z3DaBu5BhXIMeWnijSRvd8irrrg9SHpQ1pH+BUK4H6Z9wL9yOxZJMTLU+Au86XHxow==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.68.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.0.1_rollup@2.79.1
+      commondir: 1.0.1
+      estree-walker: 2.0.2
+      glob: 8.0.3
+      is-reference: 1.2.1
+      magic-string: 0.27.0
+      rollup: 2.79.1
     dev: true
 
   /@rollup/plugin-inject/5.0.3_rollup@2.79.1:
